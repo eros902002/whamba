@@ -37,6 +37,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.erostech.whamba.ui.activities.ProjectDetailsActivity" />
         </activity>
+        <activity
+            android:name=".ui.activities.AddTaskActivity"
+            android:label="@string/title_activity_add_task"
+            android:parentActivityName=".ui.activities.ProjectDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erostech.whamba.ui.activities.ProjectDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.AddCommentActivity"
+            android:label="@string/title_activity_add_comment"
+            android:parentActivityName=".ui.activities.TaskDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erostech.whamba.ui.activities.TaskDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.AddProjectActivity"
+            android:label="@string/title_activity_add_project"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erostech.whamba.ui.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
