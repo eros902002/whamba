@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 /**
@@ -11,14 +12,17 @@ import io.realm.RealmObject;
  */
 
 public class Task extends RealmObject {
-    private final List<Comment> comments;
-    private final String title;
-    private final String description;
-    private final Date creationDate;
-    private final boolean pendingReview;
+    private int id;
+    private RealmList<Comment> comments;
+    private String title;
+    private String description;
+    private Date creationDate;
+    private boolean pendingReview;
+
+    public Task() {}
 
     public Task(String title, String description, Date creationDate, boolean pendingReview) {
-        this.comments = new ArrayList<>();
+        this.comments = new RealmList<>();
         this.title = title;
         this.description = description;
         this.creationDate = creationDate;
@@ -43,5 +47,33 @@ public class Task extends RealmObject {
 
     public boolean isPendingReview() {
         return pendingReview;
+    }
+
+    public void setComments(RealmList<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public void setPendingReview(boolean pendingReview) {
+        this.pendingReview = pendingReview;
     }
 }

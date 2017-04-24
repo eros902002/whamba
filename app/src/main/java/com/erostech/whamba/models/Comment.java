@@ -9,10 +9,12 @@ import io.realm.RealmObject;
  */
 
 public class Comment extends RealmObject {
-    private int index;
+    private int id;
     private String author;
     private String content;
     private Date creationDate;
+
+    public Comment() {}
 
     public Comment(String author, String content, Date creationDate) {
         this.author = author;
@@ -30,5 +32,25 @@ public class Comment extends RealmObject {
 
     public Date getCreationDate() {
         return creationDate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 }

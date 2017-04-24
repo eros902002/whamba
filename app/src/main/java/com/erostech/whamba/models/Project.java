@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 /**
@@ -11,14 +12,17 @@ import io.realm.RealmObject;
  */
 
 public class Project extends RealmObject {
-    private final String title;
-    private final Date creationDate;
-    private final List<Task> tasks;
+    private int id;
+    private String title;
+    private Date creationDate;
+    private RealmList<Task> tasks;
+
+    public Project() {}
 
     public Project(String title, Date creationDate) {
         this.title = title;
         this.creationDate = creationDate;
-        this.tasks = new ArrayList<>();
+        this.tasks = new RealmList<>();
     }
 
     public String getTitle() {
@@ -31,5 +35,25 @@ public class Project extends RealmObject {
 
     public List<Task> getTasks() {
         return tasks;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public void setTasks(RealmList<Task> tasks) {
+        this.tasks = tasks;
     }
 }
