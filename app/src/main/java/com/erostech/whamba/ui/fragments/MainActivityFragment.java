@@ -1,4 +1,4 @@
-package com.erostech.whamba.ui;
+package com.erostech.whamba.ui.fragments;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -11,14 +11,14 @@ import com.erostech.whamba.R;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class ProjectDetailsActivityFragment extends Fragment {
+public class MainActivityFragment extends Fragment {
 
-    public ProjectDetailsActivityFragment() {
+    public MainActivityFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_project_details, container, false);
+        return inflater.inflate(R.layout.fragment_main, container, false);
     }
 }

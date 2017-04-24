@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,22 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.ProjectDetailsActivity"
+            android:name=".ui.activities.ProjectDetailsActivity"
             android:label="@string/title_activity_project_details"
-            android:parentActivityName=".ui.MainActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.erostech.whamba.ui.MainActivity" />
+                android:value="com.erostech.whamba.ui.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".ui.TaskDetailsActivity"
+            android:name=".ui.activities.TaskDetailsActivity"
             android:label="@string/title_activity_task_details"
-            android:parentActivityName=".ui.ProjectDetailsActivity"
+            android:parentActivityName=".ui.activities.ProjectDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.erostech.whamba.ui.ProjectDetailsActivity" />
+                android:value="com.erostech.whamba.ui.activities.ProjectDetailsActivity" />
         </activity>
     </application>
 

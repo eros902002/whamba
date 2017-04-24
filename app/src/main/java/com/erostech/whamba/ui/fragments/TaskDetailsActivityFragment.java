@@ -1,4 +1,4 @@
-package com.erostech.whamba.ui;
+package com.erostech.whamba.ui.fragments;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;

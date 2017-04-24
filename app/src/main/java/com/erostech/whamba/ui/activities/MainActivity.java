@@ -1,4 +1,4 @@
-package com.erostech.whamba.ui;
+package com.erostech.whamba.ui.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

@@ -1,4 +1,4 @@
-package com.erostech.whamba.ui;
+package com.erostech.whamba.ui.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +9,12 @@ import android.view.View;
 
 import com.erostech.whamba.R;
 
-public class ProjectDetailsActivity extends AppCompatActivity {
+public class TaskDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project_details);
+        setContentView(R.layout.activity_task_details);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
